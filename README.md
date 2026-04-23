@@ -1,4 +1,4 @@
-# Viral Content Generator
+# Viral Content Generator(RAG AI-Agent)
 
 ## Purpose
 
