@@ -81,12 +81,9 @@ Now create a high-performing post for:
 Follow similar patterns but do NOT copy.
 """)
 
-def format_docs(docs):
-    return "\n\n---\n\n".join([doc.page_content for doc in docs])
-
 rag_chain = (
     {
-        "context": retriever | format_docs,
+        "context": retriever,
         "question": RunnablePassthrough()
     }
     | prompt
